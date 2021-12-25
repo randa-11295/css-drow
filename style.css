@@ -1,0 +1,86 @@
+* { outline: none ;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+ body{ width: 1140px;
+      margin: auto;
+      display: flex;
+      align-items: flex-end;
+      height: 100vh;
+ }
+
+ section {
+     width: 10%;
+     display: flex;
+     height: 100vh;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ figure { width: 100%;
+          background-color: black;
+         display: flex;
+         border-radius: 20px;
+         flex-direction: column;
+         justify-content: space-evenly;
+         align-items: center ;
+         height:  40%;
+
+}
+
+aside{ background-color: black;
+        width: 20px;
+        border-radius: 0 0 5px 5px;
+        height: 45%;
+
+}
+
+div {  border-radius: 50%;
+      width: 70%;
+      height: 25%;
+
+}
+.red{ background-color: red;
+         transition: box-shadow .5s;  }
+
+.yellow { background-color: yellow;
+         transition: box-shadow .3s; }
+
+.green { background-color: rgb(153, 255, 0);
+             transition: box-shadow .3s; }
+
+.red:hover {box-shadow: 0px 0px 15px 7px red;}
+.yellow:hover {box-shadow: 0px 0px 15px 7px yellow;}
+.green:hover {box-shadow: 0px 0px 15px 7px rgb(153, 255, 0);}
+
+figcaption {  width: 85%;
+}
+
+img { margin-bottom:5% ;
+    
+      animation-name: move;
+      animation-duration: 4s ;
+      animation-iteration-count: infinite;
+
+}
+
+@keyframes move {
+    0% {  margin-left: 0px;   }
+    50% {  margin-left: 100%; }
+    98% { margin-left: 0px;}
+    100%{transform: scaleX(-1) }
+}
+
+
+
+
+
+
+
+
+
+
+
